@@ -41,7 +41,7 @@ const NavBar = () => {
         >
             <div className='h-2'>
              <div className=''>
-            <div className="h-screen bg-gray-800 max-w-full ">
+            <div className="h-screen bg-black max-w-full bg-opacity-85">
             <a href="#" className="block text-white font-bold">TOOLS TO HELP</a>
             <a href="#" className="block text-white font-bold">LOOKING OUT FOR EVERYONE</a>
             <a href="#" className="block text-white font-bold">HELP AND SUPPORT</a>
