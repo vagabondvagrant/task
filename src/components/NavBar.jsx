@@ -10,15 +10,15 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={`bg-yellow-500 p-4 ${isMobileMenuOpen ? 'bg-yellow-500' : 'bg-yellow-500'}`}>
+    <nav className={`bg-yellow-500 p-4 ${isMobileMenuOpen ? 'bg-yellow-500' : 'bg-yellow-500'} sticky top-0 z-50`}>
       <div className="container mx-auto">
         <div className="flex justify-between items-center font-bold">
           <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-black transition-all duration-300 transform focus:outline-none focus:ring focus:border-blue-300 hover:scale-105"
+              className="text-black transition-all duration-300 transform focus:outline-none focus:ring focus:border-yellow-300 hover:scale-105"
             >
-              {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+              {isMobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
             </button>
           </div>
 
@@ -40,12 +40,10 @@ const NavBar = () => {
           className={`md:hidden transition-all duration-300 transform ${isMobileMenuOpen ? 'scale-y-100 ' : 'scale-y-0'}`}
         >
             <div className='h-2'>
-             <div className=''>
-            <div className="h-screen bg-black max-w-full bg-opacity-85">
-            <a href="#" className="block text-white font-bold">TOOLS TO HELP</a>
-            <a href="#" className="block text-white font-bold">LOOKING OUT FOR EVERYONE</a>
-            <a href="#" className="block text-white font-bold">HELP AND SUPPORT</a>
-                </div>
+            <div className="h-screen bg-black max-w-full bg-opacity-95">
+            <a href="#" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }}>TOOLS TO HELP</a>
+            <a href="#" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }}>LOOKING OUT FOR EVERYONE</a>
+            <a href="#" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }}>HELP AND SUPPORT</a>
           </div>
             </div>
         </div>
