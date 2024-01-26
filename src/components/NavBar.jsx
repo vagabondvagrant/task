@@ -1,5 +1,7 @@
+// NavBar.jsx
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import LogoSvg from '../assets/logo.svg';
 
 const NavBar = () => {
@@ -7,6 +9,10 @@ const NavBar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -28,24 +34,24 @@ const NavBar = () => {
 
           <div className="hidden md:flex items-center space-x-[44px] mt-1">
             <img src={LogoSvg} alt="Logo" className="h-7 w-auto" />
-            <a href="#" className="text-black">HOME PAGE</a>
-            <a href="#" className="text-black">OUR COMMITMENT</a>
-            <a href="#" className="text-black">TOOLS TO HELP</a>
-            <a href="#" className="text-black">LOOKING OUT FOR EVERYONE</a>
-            <a href="#" className="text-black">HELP AND SUPPORT</a>
+            <Link to="/" className="text-black" onClick={closeMobileMenu}>HOME PAGE</Link>
+            <Link to="/our-commitment" className="text-black" onClick={closeMobileMenu}>OUR COMMITMENT</Link>
+            <Link to="/toolkit" className="text-black" onClick={closeMobileMenu}>TOOLS TO HELP</Link>
+            <Link to="/looking-out" className="text-black" onClick={closeMobileMenu}>LOOKING OUT FOR EVERYONE</Link>
+            <Link to="/help-and-support" className="text-black" onClick={closeMobileMenu}>HELP AND SUPPORT</Link>
           </div>
         </div>
 
         <div
           className={`md:hidden transition-all duration-300 transform ${isMobileMenuOpen ? 'scale-y-100 ' : 'scale-y-0'}`}
         >
-            <div className='h-2'>
+          <div className='h-2'>
             <div className="h-screen bg-black max-w-full bg-opacity-95">
-            <a href="#" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }}>TOOLS TO HELP</a>
-            <a href="#" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }}>LOOKING OUT FOR EVERYONE</a>
-            <a href="#" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }}>HELP AND SUPPORT</a>
-          </div>
+              <Link to="/toolkit" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>TOOLS TO HELP</Link>
+              <Link to="/looking-out" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>LOOKING OUT FOR EVERYONE</Link>
+              <Link to="/help-and-support" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>HELP AND SUPPORT</Link>
             </div>
+          </div>
         </div>
       </div>
     </nav>
