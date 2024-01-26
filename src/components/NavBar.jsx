@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={`bg-yellow-500 p-4 ${isMobileMenuOpen ? 'bg-yellow-500' : 'bg-yellow-500'} sticky top-0 z-50`}>
+    <nav className={`bg-yellow-500 p-2 ${isMobileMenuOpen ? 'bg-yellow-500' : 'bg-yellow-500'} sticky top-0 z-50`}>
       <div className="container mx-auto">
         <div className="flex justify-between items-center font-bold">
           <div className="md:hidden">
