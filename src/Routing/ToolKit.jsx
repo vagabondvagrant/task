@@ -1,6 +1,6 @@
 import React from 'react'
-import SecComp from '../Toolkit/SecCom'
 import FirstComp from "../ToolKit/FirstComp" 
+import SecComp from '../Toolkit/SecCom'
 const ToolKit = () => {
   return (
     <div className="mt-2">
