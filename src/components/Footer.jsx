@@ -6,23 +6,23 @@ import Bgaorg18Logo from '../assets/bgaorg-18-logo.svg';
 const Footer = () => {
   return (
     <footer>
-      <div className='bg-yellow-300'>
+      <div className='bg-yellow-300 flex flex-wrap justify-around p-1 md:p-2'>
         <img
           src={TtttLogotypeV1}
           alt="Taketimetothink Logo"
-          className='w-14 sm:w-16 md:w-40 md:mt-2 lg:w-24'
+          className='w-25 sm:w-22 md:w-22'
         />
 
         <img
           src={TttLogo}
           alt="Taketimetothink Logo"
-          className='w-12 sm:w-14 md:w-27 md:mt-2 lg:w-24'
+          className='w-25 sm:w-22 md:w-22'
         />
 
         <img
           src={Bgaorg18Logo}
           alt="Bgaorg 18 Logo"
-          className='w-12 sm:w-14 md:w-18 md:mt-2 lg:w-28'
+          className='w-25 sm:w-22 md:w-22'
         />
       </div>
     </footer>

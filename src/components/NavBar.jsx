@@ -34,7 +34,7 @@ const NavBar = () => {
 
           <div className="hidden md:flex items-center space-x-[44px] mt-1">
             <img src={LogoSvg} alt="Logo" className="h-7 w-auto" />
-            <Link to="/" className="text-black" onClick={closeMobileMenu}>HOME PAGE</Link>
+            <Link to="/home" className="text-black" onClick={closeMobileMenu}>HOME PAGE</Link>
             <Link to="/our-commitment" className="text-black" onClick={closeMobileMenu}>OUR COMMITMENT</Link>
             <Link to="/toolkit" className="text-black" onClick={closeMobileMenu}>TOOLS TO HELP</Link>
             <Link to="/looking-out" className="text-black" onClick={closeMobileMenu}>LOOKING OUT FOR EVERYONE</Link>

@@ -43,6 +43,7 @@ import ToolKit from './Routing/ToolKit';
 import ProtectingMinors from './Routing/ProtectingMinors';
 import { LookOut } from './components/LookOut';
 import Footer from './components/Footer';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
       <>
         <NavBar />
         <Routes>
+          <Route path="/home" element={<Home />} />
           <Route path="/looking-out" element={<LookingOut />} />
           <Route path="/toolkit" element={<ToolKit />} />
           <Route path="/protecting-minors" element={<ProtectingMinors />} />
@@ -60,9 +62,10 @@ function App() {
           {/* Add Route for LookOut */}
           <Route path="/lookout" element={<LookOut />} />
           {/* Add Route for Footer */}
-          <Route path="/footer" element={<Footer />} />
         </Routes>
       </>
+      <HelpSupport/>
+      <Footer/>
     </Router>
   );
 }
