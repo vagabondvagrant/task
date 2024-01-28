@@ -20,11 +20,11 @@ const ThirdComp = () => {
         ].map((item, index) => (
           <div key={index} className="text-black text-left mt-2">
             <picture>
-              <p className="font-bold">{item.title}</p>
+              <p className="font-bold border-b border-gray-300 pb-2">{item.title}</p>
               <source srcSet={item.icon} type="image/webp" />
               <img src={item.icon} alt={item.title} className="w-15 h-15 sm:w-16 sm:h-16 mt-3" />
             </picture>
-            <p className="sm:block mt-3">{item.paragraph}</p>
+            <p className="sm:block mt-3 mb-4 border-b border-gray-300">{item.paragraph}</p>
           </div>
         ))}
       </div>

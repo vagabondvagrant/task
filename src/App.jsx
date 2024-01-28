@@ -44,6 +44,7 @@ import ProtectingMinors from './Routing/ProtectingMinors';
 import { LookOut } from './components/LookOut';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import HelpSup from './Helper/HelpSup';
 
 function App() {
   return (
@@ -55,13 +56,9 @@ function App() {
           <Route path="/looking-out" element={<LookingOut />} />
           <Route path="/toolkit" element={<ToolKit />} />
           <Route path="/protecting-minors" element={<ProtectingMinors />} />
-          {/* Add Route for Helpline */}
           <Route path="/helpline" element={<Helpline />} />
-          {/* Add Route for HelpSupport */}
-          <Route path="/help-support" element={<HelpSupport />} />
-          {/* Add Route for LookOut */}
           <Route path="/lookout" element={<LookOut />} />
-          {/* Add Route for Footer */}
+          <Route path="/helpsup" element={<HelpSup/>}/>
         </Routes>
       </>
       <HelpSupport/>
