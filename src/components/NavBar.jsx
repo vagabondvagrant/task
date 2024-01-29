@@ -22,9 +22,9 @@ const NavBar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-black transition-all duration-300 transform focus:outline-none focus:ring focus:border-yellow-300 hover:scale-105"
+              className="text-black transition-all duration-300 transform focus:outline-none focus:ring focus:border-yellow-300 hover:scale-105 mt-2"
             >
-              {isMobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+              {isMobileMenuOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
             </button>
           </div>
 
@@ -34,11 +34,35 @@ const NavBar = () => {
 
           <div className="hidden md:flex items-center space-x-[44px] mt-1">
             <img src={LogoSvg} alt="Logo" className="h-7 w-auto" />
-            <Link to="/home" className="text-black" onClick={closeMobileMenu}>HOME PAGE</Link>
+            <Link to="/" className="text-black" onClick={closeMobileMenu}>HOME PAGE</Link>
             <Link to="/our-commitment" className="text-black" onClick={closeMobileMenu}>OUR COMMITMENT</Link>
             <Link to="/toolkit" className="text-black" onClick={closeMobileMenu}>TOOLS TO HELP</Link>
-            <Link to="/looking-out" className="text-black" onClick={closeMobileMenu}>LOOKING OUT FOR EVERYONE</Link>
-            <Link to="helpsup" className="text-black" onClick={closeMobileMenu}>HELP AND SUPPORT</Link>
+
+            <div className="relative">
+              <Link to="/lookout" className="text-black" onClick={closeMobileMenu}>
+                LOOKING OUT FOR EVERYONE
+              </Link>
+              {isMobileMenuOpen && (
+                <div className="ml-2">
+                  <Link to="/lookout" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>On The Look Out</Link>
+                  <Link to="/lookout" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>How You Can Help</Link>
+                  <Link to="/lookput" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>Protecting Minors</Link>
+                </div>
+              )}
+            </div>
+
+            <div className="relative">
+              <Link to="/helpsup" className="text-black" onClick={closeMobileMenu}>
+                HELP AND SUPPORT
+              </Link>
+              {isMobileMenuOpen && (
+                <div className="ml-2">
+                  <Link to="/helpsup" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>Support Organizations</Link>
+                  <Link to="/helpsup" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>Blocking Gambling Sites</Link>
+                  <Link to="/helpsup" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>Debt and Financial Advice</Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
@@ -48,8 +72,28 @@ const NavBar = () => {
           <div className='h-2'>
             <div className="h-screen bg-black max-w-full bg-opacity-95">
               <Link to="/toolkit" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>TOOLS TO HELP</Link>
-              <Link to="/looking-out" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>LOOKING OUT FOR EVERYONE</Link>
-              <Link to="/help-and-support" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>HELP AND SUPPORT</Link>
+
+              <div className="relative">
+                <Link to="/lookout" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>
+                  LOOKING OUT FOR EVERYONE
+                </Link>
+                {isMobileMenuOpen && (
+                  <div className="ml-2">
+                    <Link to="/lookout" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>On The Look Out</Link>
+                    <Link to="/lookout" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>How You Can Help</Link>
+                    <Link to="/lookout" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>Protecting Minors</Link>
+                  </div>
+                )}
+              </div>
+
+              <Link to="/helpsup" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>HELP AND SUPPORT</Link>
+              {isMobileMenuOpen && (
+                <div className="ml-2">
+                  <Link to="/helpsup" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>Support Organizations</Link>
+                  <Link to="/helpsup" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>Blocking Gambling Sites</Link>
+                  <Link to="/helpsup" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>Debt and Financial Advice</Link>
+                </div>
+              )}
             </div>
           </div>
         </div>

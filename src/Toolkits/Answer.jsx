@@ -3,7 +3,7 @@ import { HiOutlineChatAlt } from 'react-icons/hi';
 
 const Answer = () => {
   return (
-    <div>
+    <div className='mt-2 mb-2'>
       <h1 className='text-center font-bold text-xl md:text-2xl'>Not found the answer you were after?</h1>
       <div className='bg-gray-200'>
         <div className='flex flex-col items-center justify-center mt-2'>
