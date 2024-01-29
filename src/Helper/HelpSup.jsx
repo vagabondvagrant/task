@@ -2,6 +2,10 @@ import React from 'react'
 import Organization from './Organization'
 import Parag from './Parag'
 import Carousal from './Carousal'
+import BLOCKING from './BLOCKING'
+import GamStop from './GamStop'
+import DebtFin from './DebtFin'
+import CarRender from './CarRender'
 
 const HelpSup = () => {
   return (
@@ -11,6 +15,13 @@ const HelpSup = () => {
       </div>
       <Parag/>
       <Carousal/>
+      <br/>
+      <br/>
+      <BLOCKING/>
+      <GamStop/>
+      <br/>
+      <DebtFin/>
+      <CarRender/>
     </div>
   )
 }

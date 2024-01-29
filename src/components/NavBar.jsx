@@ -38,7 +38,7 @@ const NavBar = () => {
             <Link to="/our-commitment" className="text-black" onClick={closeMobileMenu}>OUR COMMITMENT</Link>
             <Link to="/toolkit" className="text-black" onClick={closeMobileMenu}>TOOLS TO HELP</Link>
             <Link to="/looking-out" className="text-black" onClick={closeMobileMenu}>LOOKING OUT FOR EVERYONE</Link>
-            <Link to="" className="text-black" onClick={closeMobileMenu}>HELP AND SUPPORT</Link>
+            <Link to="helpsup" className="text-black" onClick={closeMobileMenu}>HELP AND SUPPORT</Link>
           </div>
         </div>
 
