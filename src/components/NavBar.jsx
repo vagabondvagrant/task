@@ -21,7 +21,7 @@ const NavBar = () => {
           <div className="md:hidden mt-2">
             <button
               onClick={toggleMobileMenu}
-              className="text-black transition-all duration-300 transform focus:outline-none focus:ring focus:border-yellow-300 hover:scale-105 mt-2"
+              className="text-black transition-all duration-300 transform focus:outline-none focus:ring focus:border-yellow-300 hover:scale-105"
             >
               {isMobileMenuOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
             </button>
@@ -72,7 +72,6 @@ const NavBar = () => {
           <div className='h-2'>
             <div className="h-screen bg-black max-w-full bg-opacity-95">
               <Link to="/toolkit" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>TOOLS TO HELP</Link>
-
               <div className="relative">
                 <Link to="/lookout" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>
                   LOOKING OUT FOR EVERYONE
