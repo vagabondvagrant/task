@@ -16,20 +16,16 @@ const GAMCARE = () => {
       </p>
       <ul className="pl-6 text-center mx-auto">
         <li className="mb-2" style={{ paddingLeft: '20px' }}>
-          <span className="bullet-dot"></span>
-          GamCare operates the National Gambling Helpline and offers confidential information, advice, and support for anyone harmed by gambling in Great Britain. The Helpline is open 24 hours every day on Freephone 0808 8020 133 or via. Advisers will listen to you, they won’t judge, and your conversation is confidential.
+          &bull; GamCare operates the National Gambling Helpline and offers confidential information, advice, and support for anyone harmed by gambling in Great Britain. The Helpline is open 24 hours every day on Freephone 0808 8020 133 or via. Advisers will listen to you, they won’t judge, and your conversation is confidential.
         </li>
         <li className="mb-2" style={{ paddingLeft: '20px' }}>
-          <span className="bullet-dot"></span>
-          GamCare operates the National Gambling Helpline and offers confidential information, advice, and support for anyone harmed by gambling in Great Britain. The Helpline is open 24 hours every day on Freephone 0808 8020 133 or via. Advisers will listen to you, they won’t judge, and your conversation is confidential.
+          &bull; GamCare operates the National Gambling Helpline and offers confidential information, advice, and support for anyone harmed by gambling in Great Britain. The Helpline is open 24 hours every day on Freephone 0808 8020 133 or via. Advisers will listen to you, they won’t judge, and your conversation is confidential.
         </li>
         <li className="mb-2" style={{ paddingLeft: '20px' }}>
-          <span className="bullet-dot"></span>
-          A simple self-assessment tool which allows you to consider your gambling behavior.
+          &bull; A simple self-assessment tool which allows you to consider your gambling behavior.
         </li>
         <li className="mb-2" style={{ paddingLeft: '20px' }}>
-          <span className="bullet-dot"></span>
-          A list of financial services organizations in the UK that currently offer gambling blocks on debit cards. financial services organizations
+          &bull; A list of financial services organizations in the UK that currently offer gambling blocks on debit cards. financial services organizations
         </li>
       </ul>
     </div>

@@ -4,6 +4,7 @@ import SecComp from '../Toolkits/SecComp'
 import Answer from '../Toolkits/Answer'
 import ThirdComp from '../Toolkits/ThirdComp'
 import { Support } from '../Toolkits/Support'
+import Reach from '../Toolkits/Reach'
 const ToolKit = () => {
   return (
     <div className="mt-2">
@@ -13,7 +14,10 @@ const ToolKit = () => {
       </div>
       <ThirdComp/>
       <Answer/>
+      <Reach/>
+      <div className='mt-3 mb-2'>
       <Support/>
+      </div>
     </div>
   )
 }

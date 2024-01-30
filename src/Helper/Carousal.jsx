@@ -32,7 +32,7 @@ const CarouselWrapper = ({ children }) => {
             <div
               key={index}
               className={`w-3 h-3 mx-2 rounded-full cursor-pointer ${
-                currentSlide === index ? 'bg-blue-500' : 'bg-gray-300'
+                currentSlide === index ? 'bg-gray-500' : 'bg-gray-300'
               }`}
               onClick={() => setCurrentSlide(index)}
             ></div>

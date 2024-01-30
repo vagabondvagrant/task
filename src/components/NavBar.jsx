@@ -1,4 +1,3 @@
-// NavBar.jsx
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -19,7 +18,7 @@ const NavBar = () => {
     <nav className={`bg-yellow-500 p-2 ${isMobileMenuOpen ? 'bg-yellow-500' : 'bg-yellow-500'} sticky top-0 z-50`}>
       <div className="container mx-auto">
         <div className="flex justify-between items-center font-bold">
-          <div className="md:hidden">
+          <div className="md:hidden mt-2">
             <button
               onClick={toggleMobileMenu}
               className="text-black transition-all duration-300 transform focus:outline-none focus:ring focus:border-yellow-300 hover:scale-105 mt-2"

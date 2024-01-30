@@ -22,6 +22,10 @@ const HelpSup = () => {
       <br/>
       <DebtFin/>
       <CarRender/>
+      <p className='text-center mt-8'>
+        See our `Tools` page as well for ways that can help you stop gambling
+        immediately
+      </p>
     </div>
   )
 }

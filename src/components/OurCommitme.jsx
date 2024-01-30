@@ -4,7 +4,7 @@ import CommitPara from './CommitPara';
 
 const OurCommitment = () => {
   return (
-    <div>
+    <div className='mt-2'>
       <img src={OurCommitmentImage} alt="Our Commitment" className="md:w-full" />
       <CommitPara/>
     </div>

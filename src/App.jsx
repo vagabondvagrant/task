@@ -10,6 +10,7 @@ import HelpSup from './Helper/HelpSup';
 import LookingRend from './components/LookingRend';
 import OurCommitment from './components/OurCommitme';
 import FirstFooter from './components/FirstFooter';
+import Budget from './Calculator/Budget';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/helpline" element={<Helpline />} />
           <Route path="/lookout" element={<LookingRend />} />
           <Route path="/helpsup" element={<HelpSup/>}/>
+          <Route path='/budget' element={<Budget/>}/>
         </Routes>
       </>
       <HelpSupport/>
