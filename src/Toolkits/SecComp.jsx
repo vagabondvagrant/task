@@ -41,6 +41,7 @@ const SecComp = () => {
             <source srcSet={Icon2Webp} type="image/webp" />
             <img src={Icon2Webp} alt="Icon 4" className="w-full h-auto" />
           </picture>
+          
           <p className='text-white font-bold'>BUDGET CALCULATOR</p>
         </div>
 

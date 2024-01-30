@@ -28,7 +28,9 @@ function App() {
         </Routes>
       </>
       <HelpSupport/>
+      <div className='mt-2 mb-2'>
       <FirstFooter/>
+      </div>
       <Footer/>
     </Router>
   );

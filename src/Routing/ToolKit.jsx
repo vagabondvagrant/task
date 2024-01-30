@@ -5,6 +5,7 @@ import Answer from '../Toolkits/Answer'
 import ThirdComp from '../Toolkits/ThirdComp'
 import { Support } from '../Toolkits/Support'
 import Reach from '../Toolkits/Reach'
+import Budget from '../Calculator/Budget'
 const ToolKit = () => {
   return (
     <div className="mt-2">

@@ -36,6 +36,7 @@ const NavBar = () => {
             <Link to="/" className="text-black" onClick={closeMobileMenu}>HOME PAGE</Link>
             <Link to="/our-commitment" className="text-black" onClick={closeMobileMenu}>OUR COMMITMENT</Link>
             <Link to="/toolkit" className="text-black" onClick={closeMobileMenu}>TOOLS TO HELP</Link>
+            <Link to="/budget" className="text-black" onClick={closeMobileMenu}>BUDGET CALCULATOR</Link>
 
             <div className="relative">
               <Link to="/lookout" className="text-black" onClick={closeMobileMenu}>
@@ -76,6 +77,7 @@ const NavBar = () => {
                 <Link to="/lookout" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>
                   LOOKING OUT FOR EVERYONE
                 </Link>
+                <Link to="/budget" className="text-black" style={{ borderBottom: '1px solid white', padding: '5px', color: 'white', display: 'block' }} onClick={closeMobileMenu}>BUDGET CALCULATOR</Link>
                 {isMobileMenuOpen && (
                   <div className="ml-2">
                     <Link to="/lookout" className="block py-2 px-4 text-white" onClick={closeMobileMenu}>On The Look Out</Link>
